@@ -15,12 +15,23 @@
       <img src="./images/logo.png" alt="Iowa City Game Dev Meetup Logo"/>
       <nav>
         <div class="content-container">
-          <ul>
-            <li>Home</li>
-            <li><a href="#">Code of Conduct</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Showcase</a></li>
+          <button class="menu-toggle" id="menu-toggle" aria-haspopup="true" aria-controls="menu" aria-expanded="false"
+              type="button">
+            <div class="closed-content">
+              <span class="text" aria-hidden="true">Navigation</span>
+              <i class="fas fa-bars" aria-label="Navigation"></i>
+            </div>
+            <div class="open-content">
+              <span class="text" aria-hidden="true">Close</span>
+              <i class="fas fa-times" aria-label="Close"></i>
+            </div>
+          </button>
+          <ul class="menu" id="menu" role="menu" aria-labelledby="menu-toggle">
+            <li role="none">Home</li>
+            <li role="none"><a role="menuitem" href="#">Code of Conduct</a></li>
+            <li role="none"><a role="menuitem" href="#">Calendar</a></li>
+            <li role="none"><a role="menuitem" href="#">Resources</a></li>
+            <li role="none"><a role="menuitem" href="#">Showcase</a></li>
           </ul>
         </div>
       </nav>
@@ -60,11 +71,11 @@
             <div class="buttons">
               <a href="https://discord.gg/h6TRWaq" target="_blank">
                 <i class="fab fa-2x fa-discord" aria-hidden="true"></i>
-                Join us on Discord
+                <span class="text">Join us on Discord</span>
               </a>
               <a href="https://www.meetup.com/Iowa-City-Game-Dev-Meetup/" target="_blank">
                 <i class="fab fa-2x fa-meetup" aria-hidden="true"></i>
-                Join us on Meetup
+                <span class="text">Join us on Meetup</span>
               </a>
             </div>
           </article>
@@ -102,5 +113,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
