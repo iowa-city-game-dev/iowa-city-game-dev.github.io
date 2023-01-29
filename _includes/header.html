@@ -1,0 +1,72 @@
+<header>
+  {% if include.showLogo %}
+  <img src="/images/logo.png" alt="Iowa City Game Dev Meetup Logo"/>
+  {% endif %}
+  <nav>
+    <div class="content-container">
+      <button class="menu-toggle" id="menu-toggle" aria-haspopup="true" aria-controls="menu" aria-expanded="false"
+              type="button">
+        <div class="closed-content">
+          <span class="text" aria-hidden="true">Navigation</span>
+          <i class="fas fa-bars" aria-label="Navigation"></i>
+        </div>
+        <div class="open-content">
+          <span class="text" aria-hidden="true">Close</span>
+          <i class="fas fa-times" aria-label="Close"></i>
+        </div>
+      </button>
+      <ul class="menu" id="menu" role="menu" aria-labelledby="menu-toggle">
+        <li role="none">
+          {% assign homeUrl = "/" %}
+          {% if page.url != homeUrl %}
+          <a role="menuitem" href="{{homeUrl}}">
+          {% endif %}
+            Home
+          {% if page.url != homeUrl %}
+          </a>
+          {% endif %}
+        </li>
+        <li role="none">
+          {% assign codeOfConductUrl = "/code-of-conduct/" %}
+          {% if page.url != codeOfConductUrl %}
+          <a role="menuitem" href="{{codeOfConductUrl}}">
+          {% endif %}
+            Code of Conduct
+          {% if page.url != codeOfConductUrl %}
+          </a>
+          {% endif %}
+        </li>
+        <li role="none">
+          {% assign calendarUrl = "/calendar/" %}
+          {% if page.url != calendarUrl %}
+          <a role="menuitem" href="{{calendarUrl}}">
+          {% endif %}
+            Calendar
+          {% if page.url != calendarUrl %}
+          </a>
+          {% endif %}
+        </li>
+        <li role="none">
+          {% assign resourcesUrl = "/resources/" %}
+          {% if page.url != resourcesUrl %}
+          <a role="menuitem" href="{{resourcesUrl}}">
+          {% endif %}
+            Resources
+          {% if page.url != resourcesUrl %}
+          </a>
+          {% endif %}
+        </li>
+        <li role="none">
+          {% assign showcaseUrl = "/showcase/" %}
+          {% if page.url != showcaseUrl %}
+          <a role="menuitem" href="{{showcaseUrl}}">
+          {% endif %}
+            Showcase
+          {% if page.url != showcaseUrl %}
+          </a>
+          {% endif %}
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

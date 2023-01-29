@@ -199,7 +199,7 @@ header {
   }
 }
 
-section.intro {
+section.body-header {
   background-color: $charcoal-blue;
   color: $cosmic-latte;
   padding-top: $standard-margin;
@@ -210,6 +210,11 @@ section.intro {
   border-image-slice: 0 0 100% 0;
   border-image-repeat: repeat;
   border-image-outset: 29.5px;
+
+  h1 {
+    margin: 0;
+    font-size: 27px;
+  }
 
   article {
     margin-left: calc(#{$max-content-width - $intro-width});
@@ -291,7 +296,7 @@ section.intro {
   }
 }
 
-section.events {
+section.body-main {
   margin-top: 55px;
   margin-bottom: calc(3 * #{$standard-margin} / 2);
 
