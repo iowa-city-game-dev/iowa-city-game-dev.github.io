@@ -30,6 +30,10 @@ In order to update the Ruby dependencies to their latest versions, open a comman
 
 Each time a new commit is pushed to the `master` branch, it will trigger the website to be built by Jekyll and then deployed to [https://iowacitygamedev.org](https://iowacitygamedev.org). To prevent changes from prematurely going live, all work should be done on the `develop` branch. Once it is ready to go live, it can then be merged into the `master` branch.
 
+### Domain management
+
+The iowacitygamedev.org domain is currently managed and funded by [Cole Cecil](https://github.com/colececil) using [Namecheap](https://www.namecheap.com/). If anything is needed regarding domain administration or access, please contact him.
+
 ## Content
 
-(Not yet written.)
+(Not yet written. This section should cover how to add and modify events, resources, and showcase items, once the pages containing them have been developed.)
