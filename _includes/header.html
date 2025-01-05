@@ -27,12 +27,12 @@
           {% endif %}
         </li>
         <li role="none">
-          {% assign codeOfConductUrl = "/code-of-conduct/" %}
-          {% if page.url != codeOfConductUrl %}
-          <a role="menuitem" href="{{codeOfConductUrl}}">
-          {% endif %}
-            Code of Conduct
-          {% if page.url != codeOfConductUrl %}
+          {% assign showcaseUrl = "/showcase/" %}
+          {% if page.url != showcaseUrl %}
+          <a role="menuitem" href="{{showcaseUrl}}">
+            {% endif %}
+            Showcase
+            {% if page.url != showcaseUrl %}
           </a>
           {% endif %}
         </li>
@@ -40,9 +40,9 @@
           {% assign calendarUrl = "/calendar/" %}
           {% if page.url != calendarUrl %}
           <a role="menuitem" href="{{calendarUrl}}">
-          {% endif %}
+            {% endif %}
             Calendar
-          {% if page.url != calendarUrl %}
+            {% if page.url != calendarUrl %}
           </a>
           {% endif %}
         </li>
@@ -50,19 +50,19 @@
           {% assign resourcesUrl = "/resources/" %}
           {% if page.url != resourcesUrl %}
           <a role="menuitem" href="{{resourcesUrl}}">
-          {% endif %}
+            {% endif %}
             Resources
-          {% if page.url != resourcesUrl %}
+            {% if page.url != resourcesUrl %}
           </a>
           {% endif %}
         </li>
         <li role="none">
-          {% assign showcaseUrl = "/showcase/" %}
-          {% if page.url != showcaseUrl %}
-          <a role="menuitem" href="{{showcaseUrl}}">
+          {% assign codeOfConductUrl = "/code-of-conduct/" %}
+          {% if page.url != codeOfConductUrl %}
+          <a role="menuitem" href="{{codeOfConductUrl}}">
           {% endif %}
-            Showcase
-          {% if page.url != showcaseUrl %}
+            Code of Conduct
+          {% if page.url != codeOfConductUrl %}
           </a>
           {% endif %}
         </li>
