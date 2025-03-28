@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+  {% if page.title %}
+  <title>{{page.title}} | Iowa City Game Dev Meetup</title>
+  {% else %}
   <title>Iowa City Game Dev Meetup</title>
+  {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/styles.css"/>
   <link rel="stylesheet" href="/css/fontawesome/fontawesome.min.css"/>
