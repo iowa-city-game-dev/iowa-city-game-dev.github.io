@@ -228,11 +228,6 @@ section.body-header {
       margin-top: 165px;
     }
 
-    h1 {
-      margin-top: 0;
-      font-size: 23px;
-    }
-
     .buttons {
       margin-top: calc(#{$standard-margin} + (#{$standard-margin} / 2));
       margin-bottom: calc(#{$standard-margin} / 2);
@@ -296,6 +291,17 @@ section.body-header {
   }
 }
 
+section.body-header {
+  h1 {
+    margin-top: 0;
+    font-size: 23px;
+  }
+
+  &.subpage h1 {
+    font-size: 30px;
+  }
+}
+
 section.body-main {
   margin-top: 55px;
   margin-bottom: calc(3 * #{$standard-margin} / 2);
@@ -304,6 +310,10 @@ section.body-main {
     text-decoration: underline;
     text-align: center;
     font-size: 27px;
+  }
+
+  h2 {
+    font-size: 25px;
   }
 
   .event-container {
