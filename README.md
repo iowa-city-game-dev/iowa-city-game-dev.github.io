@@ -28,7 +28,7 @@ In order to update the Ruby dependencies to their latest versions, open a comman
 
 ### Deploying the website
 
-Each time a new commit is pushed to the `master` branch, it will trigger the website to be built by Jekyll and then deployed to [https://iowacitygamedev.org](https://iowacitygamedev.org). To prevent changes from prematurely going live, all work should be done on the `develop` branch. Once it is ready to go live, it can then be merged into the `master` branch.
+Each time a new commit is pushed to the `main` branch, it will trigger the website to be built by Jekyll and then deployed to [https://iowacitygamedev.org](https://iowacitygamedev.org). To prevent changes from prematurely going live, all work should be done in feature branches. When a change is finished, a pull request should be opened from the feature branch and then reviewed. Once approved, the branch can be merged into `main`.
 
 ### Domain management
 
