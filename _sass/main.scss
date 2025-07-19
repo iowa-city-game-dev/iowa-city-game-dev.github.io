@@ -10,6 +10,7 @@ $heading-font: 'Titillium Web', sans-serif;
 $body-font: 'Roboto', sans-serif;
 
 $max-content-width: 1000px;
+$max-text-width: 700px;
 $logo-width: 250px;
 $intro-width: 600px;
 $standard-margin: 20px;
@@ -362,5 +363,9 @@ section.body-main {
         margin-bottom: 0;
       }
     }
+  }
+
+  &.subpage .content-container>article {
+    max-width: $max-text-width;
   }
 }
