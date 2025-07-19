@@ -8,6 +8,7 @@ $cosmic-latte: #fff4e1;
 
 $heading-font: 'Titillium Web', sans-serif;
 $body-font: 'Roboto', sans-serif;
+$code-font: 'Roboto Mono', monospace;
 
 $max-content-width: 1000px;
 $max-text-width: 700px;
@@ -367,5 +368,14 @@ section.body-main {
 
   &.subpage .content-container>article {
     max-width: $max-text-width;
+
+    code {
+      font-family: $code-font;
+      font-size: .8em;
+      background-color: $cosmic-latte;
+      padding: 2px 4px;
+      border: 1px solid $grullo;
+      border-radius: 4px;
+    }
   }
 }
