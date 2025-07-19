@@ -30,9 +30,9 @@
           {% assign showcaseUrl = "/showcase/" %}
           {% if page.url != showcaseUrl %}
           <a role="menuitem" href="{{showcaseUrl}}">
-            {% endif %}
+          {% endif %}
             Showcase
-            {% if page.url != showcaseUrl %}
+          {% if page.url != showcaseUrl %}
           </a>
           {% endif %}
         </li>
@@ -40,9 +40,9 @@
           {% assign calendarUrl = "/calendar/" %}
           {% if page.url != calendarUrl %}
           <a role="menuitem" href="{{calendarUrl}}">
-            {% endif %}
+          {% endif %}
             Calendar
-            {% if page.url != calendarUrl %}
+          {% if page.url != calendarUrl %}
           </a>
           {% endif %}
         </li>
@@ -50,9 +50,19 @@
           {% assign resourcesUrl = "/resources/" %}
           {% if page.url != resourcesUrl %}
           <a role="menuitem" href="{{resourcesUrl}}">
-            {% endif %}
+          {% endif %}
             Resources
-            {% if page.url != resourcesUrl %}
+          {% if page.url != resourcesUrl %}
+          </a>
+          {% endif %}
+        </li>
+        <li role="none">
+          {% assign getInvolvedUrl = "/get-involved/" %}
+          {% if page.url != getInvolvedUrl %}
+          <a role="menuitem" href="{{getInvolvedUrl}}">
+          {% endif %}
+            Get Involved
+          {% if page.url != getInvolvedUrl %}
           </a>
           {% endif %}
         </li>
